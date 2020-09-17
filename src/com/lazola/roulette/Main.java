@@ -35,20 +35,19 @@ public class Main {
         do{
             switch (selection){
                 case 1:
-                    System.out.println("Enter player name, bet, amount\n");
-                    String inputBet = scanner.next();
-                    players.add(inputBet.split(" ")[0]);
-                    bet.add(inputBet.split(" ")[1]);
-                    amount.add(Double.valueOf(inputBet.split(" ")[2]));
+                    System.out.println("Enter player name, bet, amount");
 
+                    players.add(scanner.next());
+                    bet.add(scanner.next());
+                    amount.add(Double.valueOf(scanner.next()));
+
+                    System.out.println("Players: " + players + " bet: " +  bet + "  Amount: " + amount);
                     break;
                 case 2:
                     break;
             }
             System.out.println("Enter number:\n 1 - place bet\n2 - close bets\n 0 - Exit game");
-            if(scanner.hasNextLine()){
-                selection = scanner.nextInt();
-            }
+            selection = scanner.nextInt();
         }while (selection != 0);
 
 
