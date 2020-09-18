@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b0dd9a30-81fc-45ed-973f-c31ea3f2efbd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/console-roulette/com/lazola/roulette/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/console-roulette/com/lazola/roulette/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lazola/roulette/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lazola/roulette/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/lazola/roulette/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="59" column="88" lean-forward="true" selection-start-line="59" selection-start-column="88" selection-end-line="59" selection-end-column="88" />
+            <state relative-caret-position="137">
+              <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,8 +53,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -65,6 +64,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -139,14 +140,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600380484325</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="roulette commit 5">
+      <created>1600383565401</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600383565401</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -179,13 +187,14 @@
     <MESSAGE value="roulette commit 2" />
     <MESSAGE value="roulette commit 3" />
     <MESSAGE value="roulette commit 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="roulette commit 4" />
+    <MESSAGE value="roulette commit 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="roulette commit 5" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/lazola/roulette/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="59" column="88" lean-forward="true" selection-start-line="59" selection-start-column="88" selection-end-line="59" selection-end-column="88" />
+        <state relative-caret-position="137">
+          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

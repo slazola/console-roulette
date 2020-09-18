@@ -45,21 +45,7 @@ public class Main {
 
                     break;
                 case 2:
-                    int num = random.nextInt(36 - 1 + 1) + 1;
-                    System.out.printf("Number: %d%n", num);
-                    System.out.println("Player    Bet   Outcome  Winnings");
-                    String fmt = "%s  %s  %s %.2f%n";
-                    for (int i = 0; i < players.size(); i++){
-                        if(bet.get(i).equalsIgnoreCase("ODD") && (num % 2 > 0)){
-                            System.out.printf(fmt,players.get(i),bet.get(i),"WIN", Double.valueOf(amount.get(i)) * 2);
-                        }else if(bet.get(i).equalsIgnoreCase("EVEN") && (num % 2 == 0)){
-                            System.out.printf(fmt,players.get(i),bet.get(i),"WIN", Double.valueOf(amount.get(i)) * 2);
-                        }else if(Integer.parseInt(bet.get(i)) == num){
-                            System.out.printf(fmt,players.get(i),bet.get(i),"WIN", Double.valueOf(amount.get(i)) * 36);
-                        }else{
-                            System.out.printf(fmt,players.get(i),bet.get(i),"LOSE", 0d);
-                        }
-                    }
+                    runRoullette(random,players,bet,amount);
                     break;
             }
             System.out.println("Enter number:\n 1 - place bet\n2 - close bets\n 0 - Exit game");
@@ -67,5 +53,33 @@ public class Main {
         }while (selection != 0);
 
 
+    }
+
+    public static void runRoullette(Random random,List<String > players,List<String> bet,List<Double> amount){
+        int num = random.nextInt(36 - 1 + 1) + 1;
+        System.out.printf("Number: %d%n", num);
+        System.out.println("Player    Bet   Outcome  Winnings");
+        String fmt = "%s  %-10s  %-7s %.2f%n";
+        for (int i = 0; i < players.size(); i++){
+            if(bet.get(i).equalsIgnoreCase("ODD") ){
+                if(num % 2 > 0){
+                    System.out.printf(fmt,players.get(i),bet.get(i),"WIN", Double.valueOf(amount.get(i)) * 2);
+                }else {
+                    System.out.printf(fmt,players.get(i),bet.get(i),"LOSE", 0d);
+                }
+
+            }else if(bet.get(i).equalsIgnoreCase("EVEN")){
+                if(num % 2 == 0){
+                    System.out.printf(fmt,players.get(i),bet.get(i),"WIN", Double.valueOf(amount.get(i)) * 2);
+                }else {
+                    System.out.printf(fmt,players.get(i),bet.get(i),"LOSE", 0d);
+                }
+
+            }else if(Integer.parseInt(bet.get(i)) == num){
+                System.out.printf(fmt,players.get(i),bet.get(i),"WIN", Double.valueOf(amount.get(i)) * 36);
+            }else{
+                System.out.printf(fmt,players.get(i),bet.get(i),"LOSE", 0d);
+            }
+        }
     }
 }
